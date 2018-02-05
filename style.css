@@ -1,0 +1,277 @@
+#tabletest {
+	width: 100%;
+}
+
+.headrow {
+	background: blue;
+	color: #fff;
+	font-size: 14px;
+	padding: 10px 0;
+}
+.strongname {
+	font-weight: 500;
+}
+.clickToReveal {
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.dostuff {
+	display: none;
+	box-sizing: border-box;
+	padding: 20px 20px 50px;
+	border: 5px solid #8fc7b4;
+	position: absolute;
+    top: 10%;
+    width: 80%;
+    left: 10%;
+    background: #fff;
+    z-index: 5;
+}
+
+.dostuff img, .dostuff video {
+	max-width: 90%;
+	max-height: 60vh;
+    margin: 0 auto;
+    display: block;
+}
+
+.dostuff__title {
+	text-align: center;
+	display: block;
+	padding-bottom: 10px;
+	color: #1d4f44;
+}
+
+.overlay {
+    position: fixed; 
+    display: none; 
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8); 
+    z-index: 2; 
+    cursor: pointer; 
+}
+
+.table, .fullrow {
+	display: none;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+	border-top: none;
+	border-bottom: none;
+}
+.fullrow {
+    padding: 10px 10px 0;
+    margin-top: 15px;
+}
+#searchInput {
+	width: 65%;
+}
+.themeselect {
+	width: 34%;
+	float: right;
+	padding: 2px 0;
+    display: inline-block;
+    height: 26px;
+}
+
+.jumbotron {
+	width: 560px;
+	margin: 10px auto;
+	background: #60635e;
+	color: #fff;
+	padding-bottom: 100px;
+}
+.directions {
+	display: block;
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+
+/*THEMES*/
+
+/*START DEFAULT THEME*/
+	.fullrow {
+		background: #60635e;
+	}
+	.table {
+	    border: 2px solid #60635e;
+	}
+
+	.table thead tr {
+		background: #60635e !important;
+	    color: #fff;
+	    border-bottom: none;
+	}
+
+	.table tr:nth-child(even) {
+		background: #e2e2e2;
+	}
+
+	.table tr:nth-child(odd) {
+		background: #fff;
+	}
+
+	.dostuff {
+		border: 5px solid #60635e;
+	}
+
+	.dostuff__title {
+		color: #60635e;
+	}
+	.clickToReveal {
+		color: darkblue;
+	}
+/*END DEFAULT THEME*/	
+
+/*START PURPLE THEME*/
+	.purpletheme .fullrow {
+		background: #9f31c2;
+	}
+	.purpletheme .table {
+	    border: 2px solid #9f31c2;
+	}
+
+	.purpletheme .table thead tr {
+		background: #9f31c2 !important;
+	    color: #fff;
+	    border-bottom: none;
+	}
+
+	.purpletheme .table tr:nth-child(even) {
+		background: #fff3ff;
+	}
+
+	.purpletheme .table tr:nth-child(odd) {
+		background: #fff;
+	}
+
+	.purpletheme .dostuff {
+		border: 5px solid #9f31c2;
+	}
+
+	.purpletheme .dostuff__title {
+		color: #9f31c2;
+	}
+	.purpletheme .clickToReveal {
+		color: #9f31c2;
+	}
+/*END PURPLE THEME*/
+
+
+/*START BLUE THEME*/
+	.bluetheme .fullrow {
+		background: #0d5da7;
+	}
+	.bluetheme .table {
+	    border: 2px solid #0d5da7;
+	}
+
+	.bluetheme .table thead tr {
+		background: #0d5da7 !important;
+	    color: #fff;
+	    border-bottom: none;
+	}
+
+	.bluetheme .table tr:nth-child(even) {
+		background: #e3e5eb;
+	}
+
+	.bluetheme .table tr:nth-child(odd) {
+		background: #fff;
+	}
+
+	.bluetheme .dostuff {
+		border: 5px solid #0d5da7;
+	}
+
+	.bluetheme .dostuff__title {
+		color: #0d5da7;
+	}
+	.bluetheme .clickToReveal {
+		color: #0d5da7;
+	}
+/*END BLUE THEME*/
+
+
+/*START GREEN THEME*/
+	.greentheme .fullrow {
+		background: #448b18;
+	}
+	.greentheme .table {
+	    border: 2px solid #448b18;
+	}
+
+	.greentheme .table thead tr {
+		background: #448b18 !important;
+	    color: #fff;
+	    border-bottom: none;
+	}
+
+	.greentheme .table tr:nth-child(even) {
+		background: #dde7d6;
+	}
+
+	.greentheme .table tr:nth-child(odd) {
+		background: #fff;
+	}
+
+	.greentheme .dostuff {
+		border: 5px solid #448b18;
+	}
+
+	.greentheme .dostuff__title {
+		color: #448b18;
+	}
+	.greentheme .clickToReveal {
+		color: #448b18;
+	}
+/*END GREEN THEME*/
+
+
+/*START RED THEME*/
+	.redtheme .fullrow {
+		background: #ca2b3e;
+	}
+	.redtheme .table {
+	    border: 2px solid #ca2b3e;
+	}
+
+	.redtheme .table thead tr {
+		background: #ca2b3e !important;
+	    color: #fff;
+	    border-bottom: none;
+	}
+
+	.redtheme .table tr:nth-child(even) {
+		background: #ebdede;
+	}
+
+	.redtheme .table tr:nth-child(odd) {
+		background: #fff;
+	}
+
+	.redtheme .dostuff {
+		border: 5px solid #ca2b3e;
+	}
+
+	.redtheme .dostuff__title {
+		color: #ca2b3e;
+	}
+	.redtheme .clickToReveal {
+		color: #ca2b3e;
+	}
+/*END RED THEME*/
+
+
+
+
+
+
+
+

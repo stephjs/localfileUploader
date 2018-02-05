@@ -1,0 +1,53 @@
+<html>
+  <head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+  </head>
+  <body>	
+    <div class="container">
+		<div class="filepick jumbotron">
+			<span class="directions">Upload local text, image, audio, and video files.</span>
+	        <input type="file" id="fileinput" placeholder="Upload Multiple Files" multiple/>
+        </div>
+
+
+		<table class="table" id="tabletest">		  
+		  <thead>
+	  		<div class="fullrow">
+			  	<span class="half">
+			  		<input id="searchInput" placeholder="Filter">
+			  	</span>
+		  		<select class="themeselect">
+				  <option>-Select Theme-</option>
+				  <option value="red">Red</option>
+				  <option value="green">Green</option>
+				  <option value="blue">Blue</option>
+				  <option value="purple">Purple</option>
+				  <option value="gray">Gray</option>
+				</select>
+			</div>
+		    <tr>
+		      <th scope="col">Name</th>
+		      <th scope="col">Size</th>
+		      <th scope="col">Updated At</th>
+		      <th scope="col">Type</th>
+		      <th scope="col">Action</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		  </tbody>
+		  
+		</table>
+
+		<div class="overlay"></div>
+		<div class="dostuff">
+			<h1 class="dostuff__title"></h1>
+			<div class="dostuff__body"></div>
+		</div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
